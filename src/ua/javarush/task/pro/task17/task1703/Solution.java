@@ -1,0 +1,31 @@
+package ua.javarush.task.pro.task17.task1703;
+
+import java.util.ArrayList;
+
+public class Solution {
+    public static ArrayList<Astronaut> astronauts = new ArrayList<>();
+
+    public static void main(String[] args) {
+        createCrew();
+        printCrewInfo();
+    }
+
+    public static void createCrew(){
+        Astronaut firstHuman = new Human();
+        Astronaut secondHuman = new Human();
+        Astronaut dog = new Dog();
+        Astronaut cat = new Cat();
+
+        astronauts.add(firstHuman);
+        astronauts.add(secondHuman);
+        astronauts.add(dog);
+        astronauts.add(cat);
+    }
+
+    public static void printCrewInfo() {
+        System.out.println("The crew members arrived on board:");
+        for (Astronaut astronaut : astronauts) {
+            System.out.println(astronaut.getInfo());
+        }
+    }
+}
