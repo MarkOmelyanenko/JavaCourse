@@ -5,7 +5,10 @@ import java.util.stream.Stream;
 public class Solution {
 
     public static void main(String[] args) {
-        Stream<String> stream = Stream.of("Не", "хвилюйтеся", "якщо", "щось", "не", "працює.", "Коли", "б", "усе", "працювало", "вас", "би", "звільнили.");
+        Stream<String> stream = Stream.of(
+                "Don't", "worry", "if", "something", "doesn't", "work.",
+                "If", "everything", "worked", "you", "would", "be", "fired."
+        );
 
         toUpperCase(stream).forEach(System.out::println);
     }
