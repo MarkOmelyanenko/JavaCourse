@@ -2,8 +2,8 @@ package ua.javarush.task.task11.task1109;
 
 public class Solution {
     public static void main(String[] args) {
-        Cat cat = new Cat("Василь", 5);
-        Dog dog = new Dog("Сірко", 4);
+        Cat cat = new Cat("Cat", 5);
+        Dog dog = new Dog("Dog", 4);
 
         cat.isDogNear(dog);
         dog.isCatNear(cat);
