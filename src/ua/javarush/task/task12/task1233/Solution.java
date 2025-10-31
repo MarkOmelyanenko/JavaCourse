@@ -20,7 +20,6 @@ public class Solution {
             if (array[i] < array[index]) {
                 index = i;
             }
-
         }
 
         return new Pair<Integer, Integer>(array[index], index);
