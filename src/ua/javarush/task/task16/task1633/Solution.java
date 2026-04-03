@@ -1,9 +1,5 @@
 package ua.javarush.task.task16.task1633;
 
-/*
-Відчинимо все на світі
-*/
-
 public class Solution {
     public static Thread.UncaughtExceptionHandler handler = new OurUncaughtExceptionHandler();
 
